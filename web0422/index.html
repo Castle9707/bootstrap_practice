@@ -12,13 +12,48 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixedtop">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img style="width: 160px;" src="./img/main-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">園區導覽</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">周邊商品</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            動物探索
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">獅子</a></li>
+                            <li><a class="dropdown-item" href="#">老虎</a></li>
+                            <li><a class="dropdown-item" href="#">兔子</a></li>
+                            <li><a class="dropdown-item" href="#">無尾熊</a></li>
+                            <li><a class="dropdown-item" href="#">猴子</a></li>
+                            <li><a class="dropdown-item" href="#">大象</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">常見問題</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#"><i class="bi bi-person-circle p-2"></i></a>
+            <a href="#"><i class="bi bi-cart-fill p-2"></i></a>
+        </div>
+    </nav>
     <!-- 第一層容器 > 第二層列 > 第三層欄 * 個數 > 第四層背景色 > 第五層內容 -->
     <!-- .cntainer>.row>.col-3*4>bg-primary>p{item$} -->
     <!-- section 1 start -->
-    <i class="bi bi-messenger messenger fs-3"></i>
-    <i class="bi bi-facebook facebook fs-3"></i>
-    <i class="bi bi-youtube youtube fs-3"></i>
-    <i class="bi bi-line line fs-3"></i>
     <div class="bg-primary py-5">
         <h2 class="col-12 text-center">動物園</h2>
         <div class="container">
@@ -52,7 +87,7 @@
     </div>
     <!-- section 1 end -->
     <!-- section 2 start -->
-    <div class="bg-secondary py-5">
+    <div class="bg-light py-5">
         <h2 class="col-12 text-center">最新影片</h2>
         <div class="container">
             <div class="row text-center">
@@ -93,6 +128,21 @@
         </div>
     </div>
     <!-- section 3 end -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <i class="bi bi-messenger messenger fs-3"></i>
+                <i class="bi bi-facebook facebook fs-3"></i>
+                <i class="bi bi-youtube youtube fs-3"></i>
+                <i class="bi bi-line line fs-3"></i>
+            </div>
+        </div>
+    </div>
+    <a href="javascripts:;"
+        class="position-fixed end-0 bottom-50 bg-secondary text-white p-3 text-decoration-none rounded-start rounded-3">線上購票</a>
+    <a href="javascripts:;"
+        class="position-fixed end-0 bottom-0 bg-dark text-white p-3 text-decoration-none rounded-circle">TOP</a>
+    <!-- bootstrap cdn js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
