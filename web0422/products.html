@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>最新消息</title>
+    <title>黃金曼特寧咖啡豆</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -23,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="news.html">最新消息</a>
+                            <a class="nav-link" href="news.html">最新消息</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">關於我們</a>
@@ -37,7 +39,7 @@
                                 商品列表
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="products.html">淺焙</a></li>
+                                <li><a class="dropdown-item active" href="products.html" aria-current="page">淺焙</a></li>
                                 <li><a class="dropdown-item" href="products.html">深焙</a></li>
                             </ul>
                         </li>
@@ -68,71 +70,121 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mt-2">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">最新消息</li>
+                    <li class="breadcrumb-item"><a href="product-list.html">商品列表</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">黃金曼特寧咖啡豆</li>
                 </ol>
             </nav>
         </div>
-        <!-- .container>.row>.mb-2.mb-md-5.col-6.col-md-4.col-xxl-3*16>a>img.rounded-circle[src="./img/news-$$.png"].w-100+p.text-center{新聞名稱} -->
+
+        <!-- .container>.row>h2.col-12.mt-2.mb-5+.col-md-6.col-lg-3.col-12>img.w-100^.col-md-9.col-12>p.py-2*5 -->
 
         <div class="container">
             <div class="row">
-                <h2 class="rol-12 text-center mb-5">最新消息</h2>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-01.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">會員點數優惠券更新</p>
-                    </a>
+                <h3 class="col-12 mt-2 mb-5">黃金曼特寧咖啡豆 Golden Mandheling</h3>
+                <div class="col-md-5 col-lg-4 col-12">
+                    <img class="w-100 mb-2" src="img/coffee-01.jpeg" alt="">
                 </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-02.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">會員母親節抽獎活動</p>
-                    </a>
+                <div class="col-md-7 col-lg-8 col-12">
+                    <p class="pb-1"><i class="bi bi-dot text-primary"></i>濃醇蜂蜜香、強勁草本氣味、厚實滑順、黑巧克力苦甜</p>
+                    <p class="py-1"><i class="bi bi-dot text-primary"></i>產地：印尼</p>
+                    <p class="py-1"><i class="bi bi-dot text-primary"></i>主要處理法：水洗</p>
+                    <p class="py-1"><i class="bi bi-dot text-primary"></i>產區位於TOBA湖西北區的Lintong，海拔1050公尺到1200公尺</p>
+                    <p class="py-1"><i class="bi bi-dot text-primary"></i>純手工採收、當地獨創自然蔭乾法，集優雅的清爽與強勁於一身</p>
+                    <p class="py-1">規格<button type="button" class="btn btn-light mx-4">227g</button></p>
+                    <h4 class="col-12 text-secondary fw-normal mb-3">優惠 490</h4>
+                    <div class="row my-3">
+                        <div class="col-lg-6 col-12">
+                            <div class="col-12 mb-3">
+                                <select class="form-select" aria-label="number select">
+                                    <option selected value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                    <option value="5">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="row">
+                                <div class="col-4 d-grid mx-auto">
+                                    <button class="btn btn-outline-primary fs-7 px-3 text-nowrap"
+                                        type="button">加入購物車</button>
+                                </div>
+                                <div class="col-4 d-grid mx-auto">
+                                    <button class="btn btn-primary fs-7 px-3 text-white text-nowrap"
+                                        type="button">直接購買</button>
+                                </div>
+                                <div class="col-4 d-grid mx-auto">
+                                    <button class="btn btn-primary fs-7 px-3 text-white text-nowrap"
+                                        type="button">加入追蹤</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-03.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">新加入會員活動</p>
-                    </a>
+                <h3 class="col-12 mt-2 mb-5 text-secondary fw-normal">詳細資訊</h3>
+                <div class="col-12 pb-2">
+                    <ul>
+                        <li class="py-1"><span>成分：100% 阿拉比卡咖啡豆</span></li>
+                        <li class="py-1"><span>商品規格：227g±2g</span></li>
+                        <li class="py-1"><span>製造地：台灣</span></li>
+                        <li class="py-1"><span>保存期限：8個月，製造日期如包裝標示</span></li>
+                        <li class="py-1">
+                            <span>儲存方法：咖啡豆均屬新鮮烘焙，因因此我們建議的最佳賞味期為開封後的一個月內，並請保存於陰涼處為佳；保存容器以單向排氣咖啡袋、儲豆罐或其它具單向排氣功能之容器為宜</span>
+                        </li>
+                        <li class="py-1"><span>咖啡因含量：每10g含45±5mg（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）</span></li>
+                        <li class="py-1">
+                            <span>出貨須知：接獲訂單後為您新鮮現烘，預定寄出日為5~7工作天。每週四固定烘豆，若您於週二前(含)訂購，可於當週五安排出貨(遇國定假日則順延出貨)，請買家耐心等候。</span>
+                        </li>
+                        <li class="py-1">
+                            <span>退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理。鑑賞期內請保持原商品完整性，商品一經使用恕不接受退貨。</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-04.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">歡慶開幕</p>
-                    </a>
-                </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-05.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">消費回饋活動</p>
-                    </a>
-                </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-06.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">會員年末回饋問卷調查</p>
-                    </a>
-                </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-02.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">聯名舞台活動</p>
-                    </a>
-                </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-03.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">消費享最高5%刷卡金回饋</p>
-                    </a>
-                </div>
-                <div class="mb-2 mb-md-5 col-6 col-md-4 col-xxl-3">
-                    <a href="">
-                        <img src="./img/news-01.png" alt="" class="rounded-circle w-100">
-                        <p class="text-center mt-3">新品上市</p>
-                    </a>
+                <h3 class="col-12 mt-2 mb-5 text-secondary fw-normal">猜你喜歡</h3>
+                <div class="row mb-5">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card">
+                            <img class="w-100" src="img/coffee-02.jpeg" class="card-img-top" alt="coffee">
+                            <div class="card-body">
+                                <h6 class="card-title">花香耶加雪菲咖啡豆 Floral Yirgacheffe</h6>
+                                <p class="card-text fs-6 text-secondary">優惠 $440</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card">
+                            <img class="w-100" src="img/coffee-03.jpeg" class="card-img-top" alt="coffee">
+                            <div class="card-body">
+                                <h6 class="card-title">香煎焙咖啡豆香純堅果 Roasted Walnut</h6>
+                                <p class="card-text fs-6 text-secondary">優惠 $560</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card">
+                            <img class="w-100" src="img/coffee-04.jpeg" class="card-img-top" alt="coffee">
+                            <div class="card-body">
+                                <h6 class="card-title">義式咖啡豆 House Blend</h6>
+                                <p class="card-text fs-6 text-secondary">優惠 $320</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card">
+                            <img class="w-100" src="img/coffee-05.jpeg" class="card-img-top" alt="coffee">
+                            <div class="card-body">
+                                <h6 class="card-title">果樹女神咖啡豆 Pomona</h6>
+                                <p class="card-text fs-6 text-secondary">優惠 $390</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+
         <!-- modal start -->
         <div class="modal fade" id="Modal01" tabindex="-1" aria-labelledby="Modal01" aria-hidden="true">
             <div class="modal-dialog">
